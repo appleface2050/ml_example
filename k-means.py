@@ -46,7 +46,7 @@ fb_data = np.array([
     [2, 4, 13, 14, 39]]
 )
 
-print fb_data.ndim
-k_means = cluster.KMeans(n_clusters=6)
+# print fb_data.ndim
+k_means = cluster.KMeans(n_clusters=5)
 k_means.fit(fb_data)
 print k_means.labels_
