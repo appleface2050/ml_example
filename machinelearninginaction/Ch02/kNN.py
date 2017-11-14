@@ -134,5 +134,9 @@ def handwritingClassTest():
 
 
 if __name__ == '__main__':
-    group, labels = createDataSet()
-    print classify0([0, 1], group, labels, 3)
+    pass
+    # group, labels = createDataSet()
+    # print classify0([0, 1], group, labels, 3)
+
+
+

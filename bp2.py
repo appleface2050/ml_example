@@ -68,7 +68,7 @@ class NeuralNetwork(object):
 
 
 if __name__ == '__main__':
-    nn = NeuralNetwork([2, 2, 1], 'tanh')
+    nn = NeuralNetwork([2, 2, 1], 'logistic')
     x = np.array([[0, 0, 1], [0, 1, 1], [1, 0, 1], [1, 1, 1]])
     y = np.array([1, 1, 0, 0])
     nn.fit(x, y, 0.1, 10000)

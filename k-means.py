@@ -8,6 +8,7 @@ http://sports.sina.com.cn/csl/table/?cre=360.ala.zc.sc&dpc=1
 
 from sklearn import cluster, datasets
 import numpy as np
+from sklearn import preprocessing
 
 # fb_data = np.array([[1., 1., 0.5],
 #                     [0.3, 0., 0.19],
@@ -45,8 +46,9 @@ fb_data = np.array([
     [3, 6, 9, 12, 26],
     [2, 4, 13, 14, 39]]
 )
-
+# min_max_scaler = preprocessing.MinMaxScaler()
+# fb_data = min_max_scaler.fit_transform(fb_data)
 # print fb_data.ndim
 k_means = cluster.KMeans(n_clusters=5)
 k_means.fit(fb_data)
-print k_means.labels_
+print (k_means.labels_)

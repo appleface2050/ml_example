@@ -51,6 +51,6 @@ for j in xrange(60000):
     syn1 += l1.T.dot(l2_delta)
     syn0 += l0.T.dot(l1_delta)
 
-print l1
-print l2
+# print l1
+# print l2
 
